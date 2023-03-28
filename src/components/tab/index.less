@@ -1,0 +1,68 @@
+.tabWrapper {
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+    overflow: hidden;
+    transition: height .3s ease-in;
+    font-size: 18px;
+    // background-color: #e3e5e7;
+    .type {
+        padding: 2vh 3vw;
+        cursor: pointer;
+        position: relative;
+    }
+    .type:hover::after {
+        content: '';
+        width: 50%;
+        height: 3px;
+        background-color: #008577;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+    }
+    .active {
+        color: #006a5f;
+        font-weight: bold;
+        // background-color:#fff;
+    }
+    .active::after{
+        content: '';
+        width: 50%;
+        height: 3px;
+        background-color: #008577;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        font-weight: bold;
+    }
+}
+
+.hidden {
+    display: flex;
+    justify-content: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease-in;
+    font-size: 18px;
+    // background-color: #e3e5e7;
+    .type {
+        padding: 2vh 3vw;
+        cursor: pointer;
+        position: relative;
+    }
+    .active {
+        color: #006a5f;
+        font-weight: bold;
+        // background-color:#fff;
+    }
+    .active::after{
+        content: '';
+        width: 50%;
+        height: 3px;
+        background-color: #008577;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        font-weight: bold;
+    }
+}
